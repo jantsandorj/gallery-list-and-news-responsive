@@ -1,0 +1,112 @@
+
+.fireball{
+ display: flex;
+ width:100%;
+ justify-content: space-between;
+}
+.fireball img{
+    width: 15%;
+    border-radius: 20px;
+}
+h1{
+    font-size: 3rem;
+}
+.news {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px 
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 30px;
+}
+.left img{
+    width: 25%;
+    border-radius: 20px;
+
+}
+.article{
+    display: flex;
+    gap: 30px;
+}
+.article h2{
+    font-size: 2rem;
+}
+.article p{
+    font-size: 1rem;
+}
+.right{
+    width: 20%;
+    background-color: grey;
+    border-radius: 50px;
+    padding: 30px;
+}
+h3{
+    font-size: 1rem;
+}
+@media screen and (min-width: 1280px) {
+    .container{
+        width: 1380px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1280px) { 
+  .fireball{
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+    .fireball img {
+    width: 30%;
+  }  
+  .news{
+    flex-direction: column;
+  }
+  .left{
+    width: 100%;
+  }
+  .article{
+    width: 100%;
+  }
+  .article h2{
+    font-size: large;
+  }
+  .right{
+    width: 100%;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 749px) { 
+    .fireball{
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+      .fireball img {
+      width: 100%;
+    }  
+    .news{
+      flex-direction: column;
+    }
+    .left{
+      width: 100%;
+    }
+    .article{
+      width: 100%;
+      gap: 10px;
+    }
+    .article h2{
+      font-size:medium;
+    }
+    .article p{
+        font-size:small;
+      }
+    .right{
+      width: 100%;
+      padding: 20px;
+    }
+    .aside{
+        padding: 0px;
+    }
+  }
